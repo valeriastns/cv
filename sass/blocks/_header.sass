@@ -1,0 +1,61 @@
+.nav-container
+
+  .header
+    background: $dark-purple
+    height: 15vh
+    padding: 1em 2em
+    &__logo
+
+    &__nav
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+    &__nav-menu
+      // display: none
+      position: fixed
+      top: 15%
+      right: 0
+      flex-direction: column
+      justify-content: center
+      height: 100vh
+      width: 100%
+      background-color: $purple-main
+      text-align: center
+      clip-path: circle(100px at 90% -10%)
+      -webkit-clip-path: circle(100px at 90% -10%)
+      transition: all 1s ease-out
+    &__nav-menu.open
+      clip-path: circle(1000px at 90% -10%)
+      -webkit-clip-path: circle(1000px at 90% -10%)
+
+    &__nav-link
+      padding: 3em 12em
+      a
+        font-size: 2rem
+        font-weight: bold
+        color: #fff
+      a:hover
+        color: $pink
+    .hamburger-menu
+      cursor: pointer
+      .line1,
+      .line2,
+      .line3
+        width: 30px
+        height: 3px
+        background: #fff
+        border-radius: 3px
+        margin: 5px
+      .line1.transformed
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+        transform: rotate(-45deg) translate(-9px, 6px)
+      .line2.transformed
+        opacity: 0
+      .line3.transformed
+        color: $pink
+        -webkit-transform: rotate(45deg) translate(-8px, -8px)
+        transform: rotate(45deg) translate(-8px, -8px)
+
+  .theme-switcher
+    display: none
