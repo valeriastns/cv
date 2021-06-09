@@ -1,0 +1,39 @@
+.projects
+  .project
+    padding: 1em
+    box-shadow: 0px 6px 17px rgba(0, 0, 0, 0.25)
+    width: 100%
+    position: relative
+    &__img
+      width: 250px
+      margin-bottom: 2em
+    &__about
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &__about-txt
+      color: $black
+      font-size: 1.3rem
+      margin-bottom: 1em
+    &__about-btn
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 1.3rem
+      color: #fff
+      font-weight: bold
+      width: 40%
+      height: 40px
+      background-color: $purple-main
+      border-radius: 5px
+  .project::after
+    content: ''
+    position: absolute
+    top: 50%
+    right: -11%
+    background: url('../assets/icons/arrow-right.svg') center center/contain no-repeat
+    display: block
+    width: 30px
+    height: 10px
+  .project::after:hover
+    cursor: pointer
