@@ -4,6 +4,9 @@
     background: $dark-purple
     height: 15vh
     padding: 1em 2em
+    display: flex
+    justify-content: space-between
+    align-items: center
     &__logo
 
     &__nav
@@ -48,14 +51,15 @@
         border-radius: 3px
         margin: 5px
       .line1.transformed
+        background-color: $yellow
         -webkit-transform: rotate(-45deg) translate(-9px, 6px)
-        transform: rotate(-45deg) translate(-9px, 6px)
+        transform: rotate(-45deg) translate(-3px, 6px)
       .line2.transformed
         opacity: 0
       .line3.transformed
-        color: $pink
+        background-color: $pink
         -webkit-transform: rotate(45deg) translate(-8px, -8px)
-        transform: rotate(45deg) translate(-8px, -8px)
+        transform: rotate(45deg) translate(-5px, -8px)
 
   .theme-switcher
     display: none
